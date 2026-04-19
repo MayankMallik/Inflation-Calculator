@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2><center>Inflation Calculator</center></h2>
+        
+        <div class="input-group">
+            <label for="principal">Current Cost (₹)</label>
+            <input type="text" id="principal" inputmode="numeric" placeholder="e.g. 1,00,000">
+        </div>
+
+        <div class="input-group">
+            <label for="rate">Inflation Rate (% per annum)</label>
+            <input type="text" id="rate" inputmode="numeric" placeholder="e.g. 12">
+        </div>
+
+        <div class="input-group">
+            <label for="years">Time Period (in Years)</label>
+            <input type="text" id="years" inputmode="numeric" placeholder="e.g. 10">
+        </div>
+
+        <button onclick="calculateInflation()"><b>Calculate</b></button>
+
+        <div id="result-section" class="results" style="display:none;">
+            <p>Current Cost: <span id="display-principal"></span></p>
+            <p>Increase in Cost: <span id="display-profit"></span></p>
+            <p><strong>Future Cost: <span id="display-total"></span></strong></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
