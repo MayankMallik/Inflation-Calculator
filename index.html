@@ -27,10 +27,19 @@
 
         <button onclick="calculateInflation()"><b>Calculate</b></button>
 
-        <div id="result-section" class="results" style="display:none;">
-            <p>Current Cost: <span id="display-principal"></span></p>
-            <p>Increase in Cost: <span id="display-profit"></span></p>
-            <p><strong>Future Cost: <span id="display-total"></span></strong></p>
+        <div class="results" id="results" style="display: none;">
+            <div class="result-item">
+                <span>Current Cost:</span>
+                <span id="invested">₹0</span>
+            </div>
+            <div class="result-item">
+                <span>Increase in Cost:</span>
+                <span id="returns">₹0</span>
+            </div>
+            <div class="result-item total">
+                <span>Future Cost:</span>
+                <span id="total">₹0</span>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
